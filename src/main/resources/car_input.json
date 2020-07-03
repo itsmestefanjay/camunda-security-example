@@ -1,0 +1,13 @@
+{
+  "businessKey": "ac955d4e-4eae-4d9f-929e-b0352087f18d",
+  "variables": {
+    "object": {
+      "value": "{ \"brand\" : \"bmw\", \"price\": 10000 }",
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "de.novatec.bpm.model.Car",
+        "serializationDataFormat": "application/json"
+      }
+    }
+  }
+}

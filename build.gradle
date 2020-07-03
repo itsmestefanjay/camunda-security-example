@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
+}
+
+group 'de.novatec'
+version '1.0-SNAPSHOT'
+
+java {
+    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.13.0"
+    compile "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:7.13.0"
+    compile "org.springframework.boot:spring-boot-starter-jdbc:2.2.6.RELEASE"
+    compile "org.camunda.bpm:camunda-engine-plugin-spin:7.13.0"
+    compile "org.camunda.spin:camunda-spin-dataformat-all:1.9.0"
+    compile "com.h2database:h2:1.4.200"
+}
