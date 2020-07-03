@@ -26,6 +26,7 @@ public class CamundaConfig {
   SpringProcessEngineConfiguration springProcessEngineConfiguration(ApplicationContext applicationContext, DataSource camundaBpmDataSource, PlatformTransactionManager transactionManager) throws IOException {
     SpringProcessEngineConfiguration config = new SpringProcessEngineConfiguration();
     config.setDeserializationTypeValidationEnabled(true);
+    config.setDeserializationAllowedClasses("de.novatec.bpm.model.Car,de.novatec.bpm.dao.House");
     config.setDeserializationTypeValidator(new DeserializeWhitelist());
     config.setEnableXxeProcessing(false);
     config.setTransactionManager(transactionManager);

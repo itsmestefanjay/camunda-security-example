@@ -5,10 +5,14 @@ execution.getVariableTyped("myVariable").getValue();
 ```
 
 ## What needs to be done
-- provide a class which implements the interfaces `DeserializationTypeValidator` or WhitelistingDeserializationTypeValidator`
+- set property `setDeserializationTypeValidationEnabled(true)`
+- set property `setDeserializationAllowedClasses(\"com.my.class.MyClass,com.my.class.MyOtherClass\")` to whitelist classes
+- set property `setDeserializationAllowedPackages(\"com.my.class\")` to whitelist packages
+### More power needed?
+- provide a class which implements the interfaces `DeserializationTypeValidator` or `WhitelistingDeserializationTypeValidator`
 - you can also extend the existing class `DefaultDeserializationTypeValidator` which already allows uncritical data types
 - define the classes by full qualified name or packages which are allowed
-- sub packages are automatically used (no need to use .*)
+- register the type validator in your engine configuration `setDeserializationTypeValidator(myValidator)`
 
 ## This example
 
