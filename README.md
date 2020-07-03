@@ -42,3 +42,7 @@ The class `Person` is not allowed to be deserialized.
 ```
 
 - other examples are located under `src/main/resources`
+- if you run the example with class `Person` the following error will occur
+```
+org.camunda.spin.SpinRuntimeException: The following classes are not whitelisted for deserialization: [de.novatec.bpm.model.Person]"
+```
