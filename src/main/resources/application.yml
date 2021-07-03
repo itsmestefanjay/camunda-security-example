@@ -1,0 +1,30 @@
+spring.application.name: processApplication
+server.port: 8089
+camunda:
+  bpm:
+    datasource:
+      jdbcUrl: jdbc:h2:mem:camundaDB;MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+      driverClassName: org.h2.Driver
+      platform: h2
+      username: sa
+      password: sa
+      schema-update: true
+    admin-user:
+      id: admin
+      password: admin
+      firstName: Admin
+    filter:
+      create: All tasks
+    application:
+      delete-upon-undeploy: false
+      scan-for-process-definitions: true
+      deploy-changed-only: true
+      resume-previous-versions: true
+      resume-previous-by: a value
+    job-execution:
+      enabled: true
+      core-pool-size: 3
+      max-pool-size: 10
+    metrics:
+      enabled: false
+db-reporter-activate: false
