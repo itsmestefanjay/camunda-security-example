@@ -2,7 +2,7 @@
   "businessKey": "ac955d4e-4eae-4d9f-929e-b0352087f18d",
   "variables": {
     "object": {
-      "value": "{ \"street\" : \"Dieselstraße 18/1\", \"persons\": 250 }",
+      "value": "{ \"street\" : \"Bertha-Benz-Platz 1\", \"persons\": 250 }",
       "type": "Object",
       "valueInfo": {
         "objectTypeName": "de.novatec.bpm.dao.House",
